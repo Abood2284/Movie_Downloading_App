@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 
 import './_home_page.dart';
 import './Movies/movie_provider.dart';
+import './Movies/movie_detail_screen.dart';
+import './Movies/movie_model.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,6 +33,9 @@ class MyApp extends StatelessWidget {
               ),
         ),
         home: HomePage(),
+        routes: {
+          MovieDetailScreen.routeName : (ctx) => MovieDetailScreen(),
+        },
       ),
     );
   }

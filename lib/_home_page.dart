@@ -8,38 +8,27 @@ import './Movies/movie_single_item_widget.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final movie = Provider.of<MovieProvider>(context, listen: false);
-    final List<Movie> movies = movie.genereMovies('comedy');
-    final int m = movies.length;
+    final movieProvider = Provider.of<MovieProvider>(context);
+    final movieObject = movieProvider.movie;  // Storing the list of movies in movieObject
     return Scaffold(
       appBar: AppBar(
         title: const Text('Clickex Movie App'),
       ),
-      body: ListView.builder(
-          itemCount: m,
-          itemBuilder: (ctx, index) {
-            return Container(
-              child: MovieSingleItemWidget(),
-              height: 160,
-            );
-          }),
-      // ListView(
-      //   children: [
-      //     Container(
-      //         width: double.infinity,
-      //         padding: const EdgeInsets.all(4),
-      //         color: Colors.red,
-      //         margin: const EdgeInsets.only(left: 8, top: 8, right: 8),
-      //         child: const Text(
-      //           "Mario",
-      //           style: TextStyle(fontSize: 24, color: Colors.white),
-      //         )),
-      //     Container(
-      //       height: 160,
-      //       child: MovieSingleItemWidget(),
-      //     )
-      //   ],
-      // ),
+      body: GridView.builder(
+          padding: const EdgeInsets.all(3),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 1.0,
+            crossAxisSpacing: 7,
+            mainAxisSpacing: 7,
+          ),
+          /// * passing movie object ar current index of movieObject as it stores list of movie object
+          itemBuilder: (ctx, index) => MovieSingleItemWidget(
+              // movieProvider.movie[index].imageUrl,
+              // movieProvider.movie[index].title,
+              movieObject[index],
+              ),
+          itemCount: movieObject.length),
     );
   }
 }
