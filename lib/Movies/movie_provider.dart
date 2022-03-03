@@ -10,7 +10,7 @@ class MovieProvider with ChangeNotifier {
       description: 'Best comedy movie by actor Ajay devgan',
       rating: '4.3/5',
       imageUrl:
-          'https://pixabay.com/get/g2367e312e5b444252dd1639ba9f27edfa04e269538d22d4a5f2e843639b0f535f61d3350bd66de32d1024443ed6ee872a11db93c9ddc14035a7e73a82a4e359ab8344f145d4097cf1be4f9ee642acaf7_1920.jpg',
+          'https://pixabay.com/get/g20069f5c94dd79811127066b2943a530a5db9f9bc44d47170b1eda2de43471ea6cd8e46ab6febbe2bf668eb644b4cde195dbf5c52d0a97adce9474ca5a3d6e0c8a46d0d9beee827d1f5fbc656cedcf2f_1920.png',
     ),
     Movie(
       id: 'm2',
@@ -18,7 +18,7 @@ class MovieProvider with ChangeNotifier {
       description: 'Best comedy movie by actor Ajay devgan',
       rating: '4.1/5',
       imageUrl:
-          'https://pixabay.com/get/g2367e312e5b444252dd1639ba9f27edfa04e269538d22d4a5f2e843639b0f535f61d3350bd66de32d1024443ed6ee872a11db93c9ddc14035a7e73a82a4e359ab8344f145d4097cf1be4f9ee642acaf7_1920.jpg',
+          'https://pixabay.com/get/g20069f5c94dd79811127066b2943a530a5db9f9bc44d47170b1eda2de43471ea6cd8e46ab6febbe2bf668eb644b4cde195dbf5c52d0a97adce9474ca5a3d6e0c8a46d0d9beee827d1f5fbc656cedcf2f_1920.png',
     ),
     Movie(
       id: 'm3',
@@ -26,7 +26,7 @@ class MovieProvider with ChangeNotifier {
       description: 'Best comedy movie by actor Ajay devgan',
       rating: '4.0/5',
       imageUrl:
-          'https://pixabay.com/get/g2367e312e5b444252dd1639ba9f27edfa04e269538d22d4a5f2e843639b0f535f61d3350bd66de32d1024443ed6ee872a11db93c9ddc14035a7e73a82a4e359ab8344f145d4097cf1be4f9ee642acaf7_1920.jpg',
+          'https://pixabay.com/get/g20069f5c94dd79811127066b2943a530a5db9f9bc44d47170b1eda2de43471ea6cd8e46ab6febbe2bf668eb644b4cde195dbf5c52d0a97adce9474ca5a3d6e0c8a46d0d9beee827d1f5fbc656cedcf2f_1920.png',
     ),
   ];
 
