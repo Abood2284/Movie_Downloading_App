@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './movie_model.dart';
+import '../models/movie_model.dart';
 
 class MovieProvider with ChangeNotifier {
   final List<Movie> _movies = [

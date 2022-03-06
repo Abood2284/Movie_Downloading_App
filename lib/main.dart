@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import './_home_page.dart';
-import './Movies/movie_provider.dart';
-import './Movies/movie_detail_screen.dart';
-import './Movies/movie_model.dart';
+import 'providers/movie_provider.dart';
+import 'screens/movie_detail_screen.dart';
+import 'models/movie_model.dart';
 
 void main() => runApp(MyApp());
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import './movie_provider.dart';
-import './movie_model.dart';
-import './movie_detail_screen.dart';
+import '../providers/movie_provider.dart';
+import '../models/movie_model.dart';
+import '../screens/movie_detail_screen.dart';
 
 class MovieSingleItemWidget extends StatelessWidget {
   // final String imageUrl;

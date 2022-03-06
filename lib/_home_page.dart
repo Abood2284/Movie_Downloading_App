@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import './Movies/movie_provider.dart';
-import './Movies/movie_model.dart';
-import './Movies/movie_single_item_widget.dart';
+import 'providers/movie_provider.dart';
+import 'models/movie_model.dart';
+import 'widgets/movie_single_item_widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
