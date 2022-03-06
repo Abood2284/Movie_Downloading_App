@@ -24,8 +24,10 @@ class MovieDetailScreen extends StatelessWidget {
               width: double.infinity,
               child: ClipRRect(
                 borderRadius: const BorderRadius.only(
-                  bottomLeft: Radius.circular(20),
-                  bottomRight: Radius.circular(20),
+                  topRight: Radius.circular(20),
+                  topLeft: Radius.circular(20),
+                  // bottomLeft: Radius.circular(20),
+                  // bottomRight: Radius.circular(20),
                 ),
                 child: Image.network(
                   fetchedMovie.imageUrl,
@@ -33,8 +35,22 @@ class MovieDetailScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 10,),
-            Container(),
+            const SizedBox(height: 10),
+            Container(
+              height: 300,
+              width: double.infinity,
+              padding: const EdgeInsets.only(top: 15),
+              child: Column(
+                children: [
+                  Text(
+                    fetchedMovie.title,
+                    style: Theme.of(context).textTheme.headline6,
+                    textAlign: TextAlign.start,
+                  ),
+                  Text(fetchedMovie.rating),
+                ],
+              ),
+            ),
           ],
         ),
       ),

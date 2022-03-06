@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter/services.dart';
 
 import './_home_page.dart';
 import 'providers/movie_provider.dart';
 import 'screens/movie_detail_screen.dart';
-import 'models/movie_model.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  // SystemChrome.setEnabledSystemUIOverlays([]);
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -18,23 +21,25 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'DeliMeals',
+        // title: 'DeliMeals',
         theme: ThemeData(
+          fontFamily: 'Lato',
           primarySwatch: Colors.blue,
           textTheme: ThemeData.light().textTheme.copyWith(
                 headline6: const TextStyle(
-                    fontSize: 20,
+                    fontSize: 22,
+                    fontFamily: 'Lato',
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
                 bodyText2: const TextStyle(
                   fontSize: 18,
-                  color: Colors.grey,
+                  color: Colors.black87,
                 ),
               ),
         ),
         home: HomePage(),
         routes: {
-          MovieDetailScreen.routeName : (ctx) => MovieDetailScreen(),
+          MovieDetailScreen.routeName: (ctx) => MovieDetailScreen(),
         },
       ),
     );

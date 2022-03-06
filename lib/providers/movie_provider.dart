@@ -10,7 +10,7 @@ class MovieProvider with ChangeNotifier {
       description: 'Best comedy movie by actor Ajay devgan',
       rating: '4.3/5',
       imageUrl:
-          'https://pixabay.com/get/g20069f5c94dd79811127066b2943a530a5db9f9bc44d47170b1eda2de43471ea6cd8e46ab6febbe2bf668eb644b4cde195dbf5c52d0a97adce9474ca5a3d6e0c8a46d0d9beee827d1f5fbc656cedcf2f_1920.png',
+          'http://placekitten.com/200/300',
     ),
     Movie(
       id: 'm2',
@@ -18,7 +18,7 @@ class MovieProvider with ChangeNotifier {
       description: 'Best comedy movie by actor Ajay devgan',
       rating: '4.1/5',
       imageUrl:
-          'https://pixabay.com/get/g20069f5c94dd79811127066b2943a530a5db9f9bc44d47170b1eda2de43471ea6cd8e46ab6febbe2bf668eb644b4cde195dbf5c52d0a97adce9474ca5a3d6e0c8a46d0d9beee827d1f5fbc656cedcf2f_1920.png',
+          'http://placekitten.com/200/300',
     ),
     Movie(
       id: 'm3',
@@ -26,7 +26,7 @@ class MovieProvider with ChangeNotifier {
       description: 'Best comedy movie by actor Ajay devgan',
       rating: '4.0/5',
       imageUrl:
-          'https://pixabay.com/get/g20069f5c94dd79811127066b2943a530a5db9f9bc44d47170b1eda2de43471ea6cd8e46ab6febbe2bf668eb644b4cde195dbf5c52d0a97adce9474ca5a3d6e0c8a46d0d9beee827d1f5fbc656cedcf2f_1920.png',
+          'http://placekitten.com/200/300',
     ),
   ];
 
